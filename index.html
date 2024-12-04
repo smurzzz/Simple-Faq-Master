@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simple Faq Master</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: "#4E80EE",
+              black: "#030616",
+              gray: "#D2D5DA",
+              almostWhite: "#F8FAFC",
+              White: "#F8FAFC",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="h-screen container">
+      <div
+        class="flex text-center items-center justify-center flex-col h-1/5 bg-white w-full"
+      >
+        <span class="font-semibold text-lg md:text-[36px]"
+          >Frequently Asked Questions</span
+        >
+        <p class="md:text-[16px] text-[12px] md:my-3 mx-3">
+          Browse through the most frequently asked questions
+        </p>
+      </div>
+
+      <div class="min-h-screen flex justify-center bg-almostWhite">
+        <div class="p-5 w-full sm:w-2/3 lg:w-1/2">
+          <div class="flex flex-col gap-5 mt-10">
+            <span class="font-semibold text-md md:text-[24px]"
+              >How can I track my order?</span
+            >
+            <span class="md:text-[16px] text-[12px]"
+              >You can track your order using the following steps:</span
+            >
+            <ol class="list-decimal pl-5 md:text-[16px] text-[12px]">
+              <li>
+                Go to the Order <a class="text-blue" href="#">Tracking page</a>.
+              </li>
+              <li>Enter your order number and email address.</li>
+              <li>
+                Click on the Track Order button to view the current status of
+                your shipment.
+              </li>
+            </ol>
+            <span class="md:text-[16px] text-[12px]"
+              >If you encounter any issues, please visit our
+              <a class="text-blue" href="#">Help Center.</a></span
+            >
+          </div>
+          <div class="border border-gray w-full my-10"></div>
+          <div class="flex flex-col gap-5">
+            <span class="font-semibold text-md md:text-[24px]"
+              >What is your return policy?</span
+            >
+            <span class="md:text-[16px] text-[12px]"
+              >We offer a 30-day return policy on most items. Here are some key
+              points</span
+            >
+            <ol class="list-disc pl-5 md:text-[16px] text-[12px]">
+              <li>
+                <span class="font-semibold"
+                  >Items must be in original condition:</span
+                >
+                Unworn, unused, and unwashed.
+              </li>
+              <li>
+                <span class="font-semibold"
+                  >Include original packaging and tags:</span
+                >
+                All items should be returned with their original packaging and
+                tags.
+              </li>
+              <li>
+                <span class="font-semibold">Proof of purchase:</span>
+                A receipt or proof of purchase is required.
+              </li>
+            </ol>
+            <span class="md:text-[16px] text-[12px]"
+              >For more detailed information, read our full
+              <a class="text-blue" href="#">Return Policy.</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
